@@ -1,0 +1,138 @@
+#rollDice {
+  font-weight: bold;
+  cursor: pointer;
+  height: 35px;
+  top: 330px;
+  background-color: rgb(9, 145, 236);
+  border: 2px solid rgb(11, 154, 236);
+  color: bisque;
+  position: absolute;
+  top: 450px;
+  right: 375px;
+  bottom: 45px;
+}
+
+#newGame {
+  font-weight: bold;
+  cursor: pointer;
+  height: 35px;
+  top: 330px;
+  background-color: rgb(9, 145, 236);
+  border: 2px solid rgb(11, 154, 236);
+  color: beige;
+  position: absolute;
+  top: 450px;
+  right: 275px;
+  bottom: 45px;
+}
+
+#rollDice:hover,
+#newGame:hover,
+#instructionsBtn:hover,
+#rollDice:focus,
+#newGame:focus,
+#instructionsBtn:focus,
+#rollDice:active,
+#newGame:active,
+#instructionsBtn:active {
+  background-color: rgb(27, 109, 233);
+  color: white;
+  transform: scale(1.3);
+}
+
+#instructionsBtn {
+  font-weight: bold;
+  cursor: pointer;
+  height: 35px;
+  top: 330px;
+  background-color: rgb(9, 145, 236);
+  border: 2px solid rgb(11, 154, 236);
+  color: beige;
+  position: absolute;
+  top: 450px;
+  right: 95px;
+  bottom: 45px;
+}
+
+#peter {
+  font-weight: bold;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+}
+
+#lois {
+  font-weight: bold;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+}
+
+#chris {
+  font-weight: bold;
+  padding: 5px;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+}
+
+#meg {
+  font-weight: bold;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+}
+
+#stewie {
+  font-weight: bold;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+}
+
+#brian {
+  font-weight: bold;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+}
+
+#peter:hover,
+#lois:hover,
+#meg:hover,
+#chris:hover,
+#stewie:hover,
+#brian:hover,
+#peter:focus,
+#lois:focus,
+#meg:focus,
+#chris:focus,
+#stewie:focus,
+#brian:focus,
+#peter:active,
+#lois:active,
+#meg:active #chris:active,
+#stewie:active,
+#brian:active {
+  background-color: rgb(218, 76, 10);
+  color: white;
+  transform: scale(1.3);
+}/*# sourceMappingURL=buttons.css.map */

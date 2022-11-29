@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+//import variables values file 
+@import "variables.scss";
+
+//import game conatiner file
+@import "gameConatiner.scss";
+
+//import popup file
+@import "popUp.scss";
+
+//import buttons file
+@import "buttons.scss";
+
+//import mixin file
+@import "mixins.scss";
+
+body{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    background-color:rgb(235, 105, 18);
+    color:beige;
+    font-weight: bolder;
+    height: 50px;
+    text-align: center;
+}
+
+
+
+#gif01 , #gif02, #gif03{
+    visibility: hidden;
+    
+}
+
+.roll{
+    animation: roll 0.5s infinite;
+}
+
+@keyframes roll{
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+.resize01{
+    width: 30%;
+    height: auto;   
+}
+.resize02{
+    width: 30%;
+    height: auto;
+}
+.resize03{
+    width: 30%;
+    height: auto;
+   
+}
+.resize04{
+    width: 30%;
+    height: auto;
+}
+
+@media screen and (max-width:900px){
+    .game-box-container{
+     top: 50%;
+     left: 50%;
+     bottom: 50%;
+    }
+    footer{
+        width:900px;
+      }
+      #infoPeter, #infoLois, #infoChris, #infoMeg, #infoStewie, #infoBrian{
+        right: -100px;
+        bottom: 10px;
+      }
+  
+  }
+#about{
+    float:left;
+    font-size: x-large;
+}

@@ -1,0 +1,422 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgb(235, 105, 18);
+  color: beige;
+  font-weight: bolder;
+  height: 50px;
+  text-align: center;
+}
+
+#dice01, #dice02, #urScore, #oppoScore {
+  text-align: center;
+}
+
+.game-box-container {
+  background-color: transparent;
+  height: 600px;
+  max-width: 690px;
+  position: relative;
+  margin: auto;
+  right: 300px;
+  bottom: 145px;
+  top: 50px;
+}
+
+.you-container {
+  height: 300px;
+  max-width: 250px;
+  border: 2px solid rgb(121, 16, 16);
+  background-color: rgb(235, 105, 18);
+  position: relative;
+  margin: auto;
+  right: 170px;
+  bottom: 245px;
+  top: 80px;
+}
+
+.dice-container {
+  background-color: antiquewhite;
+  height: 120px;
+}
+
+.dice-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.score-container {
+  background-color: antiquewhite;
+}
+
+.opponent-container {
+  height: 300px;
+  max-width: 250px;
+  border: 2px solid rgb(121, 16, 16);
+  background-color: rgb(238, 198, 20);
+  position: relative;
+  margin: auto;
+  right: -130px;
+  bottom: -90px;
+  top: -225px;
+}
+
+#instructions {
+  text-align: left;
+  background: rgb(224, 234, 243);
+  color: black;
+  border: solid 3px rgb(49, 89, 116);
+  border-radius: 7px;
+  width: 280px;
+  height: 300px;
+  padding: 8px;
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  bottom: 645px;
+  box-shadow: 2px 2px 2px 2px var(--dark-color);
+  -webkit-animation: instructions 1s;
+          animation: instructions 1s;
+}
+
+.result {
+  text-align: left;
+  background-color: rgb(224, 234, 243);
+  color: black;
+  border: solid 3px rgb(49, 89, 116);
+  border-radius: 2px;
+  width: 280px;
+  height: 320px;
+  padding: 8px;
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  bottom: 745px;
+  box-shadow: 2px 2px 2px 2px var(--dark-color);
+  -webkit-animation: instructions 1s;
+          animation: instructions 1s;
+}
+
+@-webkit-keyframes instructions {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes instructions {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h2 {
+  text-align: center;
+}
+
+#countdown-box {
+  text-align: center;
+  font-size: 100px;
+  background-color: rgb(224, 234, 243);
+  color: rgb(12, 22, 165);
+  border-radius: 7px;
+  width: 300px;
+  height: 250px;
+  padding: 8px;
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  bottom: 745px;
+  -webkit-animation: instructions 1s;
+          animation: instructions 1s;
+}
+
+.close-pop-up01 {
+  background-color: white;
+  color: rgb(100, 79, 83);
+  border-radius: 100%;
+  font-weight: bold;
+  border: solid 3px rgb(234, 238, 8);
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-pop-up01:hover,
+.close-pop-up01:focus,
+.close-pop-up01:active {
+  background-color: rgb(22, 37, 170);
+  color: white;
+  transform: scale(1.3);
+}
+
+.close-pop-up02 {
+  background-color: white;
+  color: rgb(100, 79, 83);
+  border-radius: 100%;
+  font-weight: bold;
+  border: solid 3px rgb(234, 238, 8);
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-pop-up02:hover,
+.close-pop-up02:focus,
+.close-pop-up02:active {
+  background-color: rgb(22, 37, 170);
+  color: white;
+  transform: scale(1.3);
+}
+
+#rollDice {
+  font-weight: bold;
+  cursor: pointer;
+  height: 35px;
+  top: 330px;
+  background-color: rgb(9, 145, 236);
+  border: 2px solid rgb(11, 154, 236);
+  color: bisque;
+  position: absolute;
+  top: 450px;
+  right: 375px;
+  bottom: 45px;
+}
+
+#newGame {
+  font-weight: bold;
+  cursor: pointer;
+  height: 35px;
+  top: 330px;
+  background-color: rgb(9, 145, 236);
+  border: 2px solid rgb(11, 154, 236);
+  color: beige;
+  position: absolute;
+  top: 450px;
+  right: 275px;
+  bottom: 45px;
+}
+
+#rollDice:hover,
+#newGame:hover,
+#instructionsBtn:hover,
+#rollDice:focus,
+#newGame:focus,
+#instructionsBtn:focus,
+#rollDice:active,
+#newGame:active,
+#instructionsBtn:active {
+  background-color: rgb(27, 109, 233);
+  color: white;
+  transform: scale(1.3);
+}
+
+#instructionsBtn {
+  font-weight: bold;
+  cursor: pointer;
+  height: 35px;
+  top: 330px;
+  background-color: rgb(9, 145, 236);
+  border: 2px solid rgb(11, 154, 236);
+  color: beige;
+  position: absolute;
+  top: 450px;
+  right: 95px;
+  bottom: 45px;
+}
+
+#gif01, #gif02, #gif03 {
+  visibility: hidden;
+}
+
+.roll {
+  -webkit-animation: roll 0.5s infinite;
+          animation: roll 0.5s infinite;
+}
+
+@-webkit-keyframes roll {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+.resize01 {
+  width: 30%;
+  height: auto;
+}
+
+.resize02 {
+  width: 30%;
+  height: auto;
+}
+
+.resize03 {
+  width: 30%;
+  height: auto;
+}
+
+.resize04 {
+  width: 30%;
+  height: auto;
+}
+
+@media screen and (max-width:900px){
+  .game-box-container{
+   top: 50%;
+   left: 50%;
+   bottom: 50%;
+  }
+footer{
+  width:900px;
+  
+}
+#infoPeter, #infoLois, #infoChris, #infoMeg, #infoStewie, #infoBrian{
+  float: right;
+}
+
+
+}
+
+#about{
+float: left;
+ font-size: x-large;
+}
+
+#peter{
+font-weight: bold;
+padding: 5px;
+float: right;
+cursor: pointer;
+background-color: rgb(235, 105, 18);
+border: 2px solid rgb(235, 105, 18);
+color: beige;
+
+}
+
+#lois{
+  font-weight: bold;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+ 
+  }
+
+#chris{
+  font-weight: bold;
+  padding: 5px;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+  
+  
+}
+
+#meg{
+  font-weight: bold;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color:  rgb(235, 105, 18);
+  border: 2px solid rgb(235, 105, 18);
+  color: beige;
+ 
+   
+ }
+
+#stewie{
+ font-weight: bold;
+ padding: 5px;
+ float: right;
+ cursor: pointer;
+ background-color:  rgb(235, 105, 18);
+ border: 2px solid rgb(235, 105, 18);
+ color: beige;
+
+      
+}
+
+#brian{
+  font-weight: bold;
+  padding: 5px;
+  float: right;
+  cursor: pointer;
+  background-color:  rgb(235, 105, 18);
+ border: 2px solid rgb(235, 105, 18);
+  color: beige;
+ 
+ }
+
+#infoPeter, #infoLois, #infoChris, #infoMeg, #infoStewie, #infoBrian{
+  text-align: left;
+  background: rgb(224, 234, 243);
+  color: black;
+  border: solid 3px rgb(49, 89, 116);
+  border-radius: 7px;
+  width: 300px;
+  height: 300px;
+  padding: 8px;
+  position: absolute;
+  top: 300px;
+  right: 150px;
+  bottom: 645px;
+  box-shadow: 2px 2px 2px 2px var(--dark-color);
+}
+
+
+#peter:hover, 
+#lois:hover,
+#meg:hover,
+#chris:hover, 
+#stewie:hover,
+#brian:hover,
+#peter:focus,
+#lois:focus,
+#meg:focus, 
+#chris:focus,
+#stewie:focus,
+#brian:focus, 
+#peter:active,
+#lois:active,
+#meg:active
+#chris:active,
+#stewie:active,
+#brian:active
+{
+    background-color: rgb(218, 76, 10);
+    color:white;
+    transform: scale(1.3);
+}

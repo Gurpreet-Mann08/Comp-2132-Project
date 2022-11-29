@@ -1,0 +1,121 @@
+
+#instructions{
+    text-align: left;
+    background: $popUpBackColor;
+    color:$popUpTextColor;
+    border: solid 3px rgb(49, 89, 116) ;
+    border-radius: 7px;
+    width: 280px;
+    height: 300px;
+    padding: 8px;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    bottom: 645px;
+    box-shadow: 2px 2px 2px 2px var(--dark-color);
+    animation: instructions 1s;
+
+}
+.result{
+    text-align: left;
+    background-color:$popUpBackColor;
+    color:$popUpTextColor;
+    border: solid 3px rgb(49, 89, 116) ;
+    border-radius: 2px;
+    width: 280px;
+    height: 320px;
+    padding: 8px;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    bottom: 745px;
+    box-shadow: 2px 2px 2px 2px var(--dark-color);
+    animation: instructions 1s;
+}
+@keyframes instructions{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+h2{
+    text-align: center;
+}
+
+#countdown-box{
+    text-align: center;
+    font-size: 100px;
+    background-color:$popUpBackColor;
+    color: rgb(12, 22, 165);
+    border-radius: 7px;
+    width: 300px;
+    height: 250px;
+    padding: 8px;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    bottom: 745px;
+    animation: instructions 1s;
+
+}
+
+.close-pop-up01{
+    background-color: white;
+	color:rgb(100, 79, 83);
+	border-radius: 100%;
+	font-weight: bold;
+	border:solid 3px rgb(234, 238, 8);
+	cursor:pointer;
+	position:absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.close-pop-up01:hover,
+.close-pop-up01:focus,
+.close-pop-up01:active{
+	background-color: rgb(22, 37, 170);
+	color:white;
+	transform: scale(1.3);
+}
+
+.close-pop-up02{
+    background-color: white;
+	color:rgb(100, 79, 83);
+	border-radius: 100%;
+	font-weight: bold;
+	border:solid 3px rgb(234, 238, 8);
+	cursor:pointer;
+	position:absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.close-pop-up02:hover,
+.close-pop-up02:focus, 
+.close-pop-up02:active
+{
+    background-color: rgb(22, 37, 170);
+	color:white;
+	transform: scale(1.3);
+}
+
+#infoPeter, #infoLois, #infoChris, #infoMeg, #infoStewie, #infoBrian{
+    text-align: left;
+    background: rgb(224, 234, 243);
+    color: black;
+    border: solid 3px rgb(49, 89, 116);
+    border-radius: 7px;
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    position: absolute;
+    top: 300px;
+    right: 150px;
+    bottom: 645px;
+    box-shadow: 2px 2px 2px 2px var(--dark-color);
+  }
+  

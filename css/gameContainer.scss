@@ -1,0 +1,50 @@
+
+#dice01, #dice02, #urScore,#oppoScore{
+    text-align: center;
+}
+
+
+.game-box-container{
+    background-color: transparent;
+    height: 600px;
+    max-width: 690px;
+    position: relative;
+    margin: auto;
+    right: 300px;
+    bottom: 145px;
+    top: 50px;
+}
+
+
+.you-container{
+    @include gameBoxes(300px, 250px, rgb(121, 16, 16) );
+    background-color:$containerBoxColor; 
+    position: relative;
+    margin: auto;
+    right: 170px;
+    bottom: 245px;
+    top: 80px;
+}
+.dice-container{
+    background-color: antiquewhite;
+    height: 120px;
+    
+}
+.dice-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.score-container{
+    background-color:  antiquewhite;
+}
+
+.opponent-container{
+    @include gameBoxes(300px, 250px, rgb(121, 16, 16) );
+    background-color: rgb(238, 198, 20);
+    position: relative;
+    margin: auto;
+    right: -130px;
+    bottom: -90px; 
+    top: -225px;
+}

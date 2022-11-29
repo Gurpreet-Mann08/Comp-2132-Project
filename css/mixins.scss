@@ -1,0 +1,6 @@
+@mixin gameBoxes($gameBoxHeight, $gameBoxMaxWidth, $borderColor) {
+    height: $gameBoxHeight;
+    max-width: $gameBoxMaxWidth;
+    border: 2px solid $borderColor;
+    
+}

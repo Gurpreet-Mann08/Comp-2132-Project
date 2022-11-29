@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Final Project- Gurpreet Mann </title>
+        <meta name="author" content="Gurpreet Mann">
+        <meta name="description" content="This webpage demonstrate game of roll of dice.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+
+        <link rel="icon" type="image/icon" href="favicon/favicon.ico">
+
+        <link rel="styleSheet" href="css/styleFinal.css"> <!--Link to Css style sheet-->
+        <script src="javascript/jquery-3.4.1.min.js"></script>
+        <script src="javascript/project.js" defer="defer"></script><!--Link to external javascript file-->
+      
+    </head>
+       
+    <body>
+        
+        <main id="main">
+            <div class="game-box-container" id="gamebox">
+               
+                <div class="you-container">
+                
+                    <div class="dice-container">
+                        <h3 id="dice01">Your Dice</h3>
+                        <div class="dice-wrapper">
+                            <img src="images/dice-1.jpg" class="resize01" id="dice-img01">
+                            <img src="images/dice-2.jpg" class="resize02" id="dice-img02">
+                        </div>
+
+                    </div>
+
+                    <div class="score-container">
+                        <h3 id="urScore">Your Score</h3>
+                        <p><strong>This round score:</strong>
+                        <span id="yourScore"></span></p>
+                        <p><strong>Total Score:</strong>
+                        <span id="yourTotal"></span></p>
+
+                    </div>
+                </div>
+             
+                <div class="opponent-container">
+                    <div class="dice-container">
+                        <h3 id="dice02">Opponent's Dice</h3>
+                        <div class="dice-wrapper">
+                            <img src="images/dice-1.jpg" class="resize03" id="dice-img03">
+                            <img src="images/dice-2.jpg" class="resize04" id="dice-img04">
+                        </div>
+
+                    </div>
+                    <div class="score-container">
+                        <h3 id="oppoScore">Opponent's Score</h3>
+                        <p> <strong>This round score:</strong>
+                        <span id="opponentScore"></span></p>
+                        <p><strong>Total Score:</strong>
+                        <span id="opponentTotal"></span></p>
+
+                    </div>
+                    <aside id="instructions" class="instructions">
+                        <button class="close-pop-up01" id="close-pop-up01"> X </button>
+                        <h3><strong>Greetings Gamers !! </strong></h3>
+                        <p>Instructions:</p>
+                        <p>To play the roll of dice game click on the 'Roll dice' button. To start new game click on the 'New game' button.</p>
+                        <p>Rules:</p>
+                        <p>Player who earns maximum scores after 3 rounds is the Winner of this game.</p>
+                        <stong>BEST OF LUCK !!</stong>
+                    </aside>
+                    
+                <aside id="result" class="result">
+                    <button id="close-pop-up02" class="close-pop-up02">X</button>
+                    <h2>Game over !!</h2>
+                    <p id="output01"></p>
+                    <img id="gif01">
+
+                </aside>
+                
+                <aside id="countdown-box">
+                   
+                    <span id="countdown-number"> 5</span>
+
+                </aside>
+                </div>
+                <div class="buttons-box">
+                    <button id="rollDice" class="rollDice">Roll Dice</button>
+                 
+                    <button id="newGame">New Game</button>
+                    <button id="instructionsBtn">Instructions</button>
+    
+                 </div>
+    
+            </div>
+>
+        </main>
+
+        <footer >
+
+            <div class="aboutUs">
+                <p id="about">About Our Family</p>
+                <button id="peter" >Peter Griffin</button>
+                <aside id="infoPeter"><p> Hi I'm Peter and I'm head of the Griffin family of Quahog, Rhode Island.</p><img src="images/peter.jpg" > </aside>
+                <button id="lois">Lois Griffin</button>
+                <aside id="infoLois"> <p>Hi I'm Lois, married to Peter and the mom of three kids.</p> <img src="images/lois.jpg"></aside>
+                <button id="chris">Chris Griffin</button>
+                <aside id="infoChris"><p>Hi This is Chris a teenaged boy. I'm not very smart and seems emotionally stunted.</p><img src="images/chris.jpg" > </aside>
+                <button id="meg">Meg Griffin</button>
+                <aside id="infoMeg"><p>Hi I'm Meg, the oldest child. No one seems to like me (including my family).My family bullies and ignores me.</p> <img src="images/meg.jpg"> </aside>
+                <button id="stewie">Stewie Griffin</button>
+                <aside id="infoStewie"><p>Hi I'm Stewie, the baby of the family, but I'm really an evil genius.</p> <img src="images/stewie.png"></aside>
+                <button id="brian">Brian Griffin</button>
+                <aside id="infoBrian"><p>Hi I'm Brian, the family dog, but I can speak and I'm fairly smart.</p> <img src="images/brian.jpg"></aside>
+                
+
+
+            </div>
+            </footer>
+
+    </body>
+</html>
